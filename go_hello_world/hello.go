@@ -18,6 +18,14 @@ func factorial(number int) int {
   }
 }
 
+func fibonacci(number int) int {
+  if number == 1 || number == 2 {
+    return 1
+  } else {
+    return fibonacci(number - 1) + fibonacci(number - 2)
+  }
+}
+
 func main() {
     hi()
 
@@ -28,5 +36,8 @@ func main() {
     fmt.Printf("\n\n\n")
 
     fmt.Print(factorial(10))
+    fmt.Printf("\n\n\n")
+
+    fmt.Print(fibonacci(6))
     fmt.Printf("\n\n\n")
 }
